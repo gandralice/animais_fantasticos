@@ -32,7 +32,6 @@ nav {
   margin: 40px 0;
   background-color: #f2b654;
   padding: 20px 40px;
-  border-radius: 2px 0px 0px 2px;
 }
 nav ul {
   display: flex;
@@ -73,11 +72,8 @@ li a {
 }
 .animais h2 {
   font-family: "Roboto";
-  color: #85370a;
   text-transform: uppercase;
-  background-color: #f2b5541d;
   padding: 4px 20px;
-  border-radius: 2px;
   margin-bottom: 1rem;
 }
 .animais h2::before {
@@ -108,4 +104,84 @@ li a {
 }
 .animais-desc section {
   margin-bottom: 2rem;
+}
+.faq-lista {
+  grid-column: 2/-1;
+}
+.faq-lista dt {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-color: #f2b654;
+  margin-right: 10px;
+}
+.faq-lista dd {
+  font-family: "Roboto";
+}
+footer {
+  grid-column: 3/-1;
+  text-align: center;
+  padding: 40px;
+  background-color: #f2b55436;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.mapa {
+  grid-column: 2;
+}
+.dados {
+  grid-column: 3;
+}
+.dados li {
+  margin-bottom: 1rem;
+  font-family: "Roboto";
+}
+.dados li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  background-color: #f2b654;
+  margin-right: 10px;
+}
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  nav,
+  .grid-section,
+  footer {
+    grid-column: 1;
+  }
+  nav {
+    margin-top: 0px;
+  }
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+  }
+  .animais-lista {
+    grid-column: 1;
+  }
+  .faq-lista,
+  .mapa,
+  footer {
+    grid-column: 1/-1;
+  }
+  .titulo {
+    font-size: 3rem;
+  }
+  .animais h2 {
+    font-size: 1rem;
+  }
 }
