@@ -11,3 +11,6 @@ init_scroll();
 
 import init_ascroll from "./js-modules/a-scroll.js";
 init_ascroll();
+
+import init_modal from "./js-modules/modal.js";
+init_modal();
