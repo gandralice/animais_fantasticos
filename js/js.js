@@ -14,3 +14,6 @@ init_ascroll();
 
 import init_modal from "./js-modules/modal.js";
 init_modal();
+
+import init_tooltip from "./js-modules/tooltip.js";
+init_tooltip();

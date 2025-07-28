@@ -1,0 +1,11 @@
+.tooltip {
+  position: absolute;
+  z-index: 500;
+  background-color: white;
+  box-shadow: 0 0 0 2px #f2b654, 0 0 0 5px white;
+  padding: 2px 4px;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  max-width: 130px;
+  opacity: 0.85;
+}
