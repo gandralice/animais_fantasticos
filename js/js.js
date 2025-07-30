@@ -17,3 +17,6 @@ init_modal();
 
 import init_tooltip from "./js-modules/tooltip.js";
 init_tooltip();
+
+import init_dropdown from "./js-modules/dropdown-menu.js";
+init_dropdown();
