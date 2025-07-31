@@ -7,7 +7,6 @@ export default function init_tooltip() {
 
   function on_mouseover(event) {
     const tooltip_box = criar_tooltip_box(this);
-    console.log(tooltip_box.style);
 
     on_mousemove.tooltip_box = tooltip_box;
     this.addEventListener("mousemove", on_mousemove);
@@ -38,7 +37,6 @@ export default function init_tooltip() {
     tooltip_box.classList.add("tooltip");
     tooltip_box.innerText = text;
     document.body.appendChild(tooltip_box);
-    console.log(tooltip_box);
     return tooltip_box;
   }
 }

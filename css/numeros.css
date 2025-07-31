@@ -1,0 +1,16 @@
+.numeros-grid {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.numeros-grid h3 {
+  font-size: 2rem;
+  font-family: "Vollkorn";
+}
+.numeros-grid span {
+  font-size: 1.4rem;
+  font-family: "Roboto";
+  font-weight: bold;
+}

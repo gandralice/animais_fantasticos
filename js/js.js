@@ -23,3 +23,6 @@ init_dropdown();
 
 import init_menumobile from "./js-modules/menu-mobile.js";
 init_menumobile();
+
+import init_anima_num from "./js-modules/anima-num.js";
+init_anima_num();
